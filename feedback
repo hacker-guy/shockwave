@@ -1,0 +1,1265 @@
+============================================
+vis/output.txt
+19:38:15_Saturday_14_October_2017
+============================================
+
+Compiling with gcc -Wall -std=c99 ... 
+Compilation succeeded.
+setrlimit failed.
+==31235== Memcheck, a memory error detector
+==31235== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==31235== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==31235== Command: exec ../data/in_shock.csv ../data/in_linalsys.csv ../data/in_interp.csv 5 ../data/in_heateqn.csv
+==31235== 
+QUESTION 2: 160.07 ms
+QUESTION 3: 11.22 ms
+n end: 2
+QUESTION 5: 23.05 ms
+QUESTION 6: 131.43 ms
+==31235== 
+==31235== HEAP SUMMARY:
+==31235==     in use at exit: 0 bytes in 0 blocks
+==31235==   total heap usage: 1,541 allocs, 1,541 frees, 1,929,880 bytes allocated
+==31235== 
+==31235== All heap blocks were freed -- no leaks are possible
+==31235== 
+==31235== For counts of detected and suppressed errors, rerun with: -v
+==31235== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)
+============================================
+Test for input file: 
+Files ../data/out_shock.csv and out_shock.csv differ
+ 
+Oops, your shock solution seems to be INCORRECT.  :(
+ 
+Files ../data/out_linalsys.csv and out_linalsys.csv differ
+ 
+Oops, your algebraic systems seems to be INCORRECT.  :(
+ 
+ 
+Oops, your interpolation seems to be INCORRECT.  :(
+ 
+Files ../data/out_heateqn_explicit_fe.csv and out_heateqn_explicit_fe.csv differ
+ 
+Oops, your heat eqn explicit fixed ends seems to be INCORRECT.  :(
+ 
+Files ../data/out_heateqn_explicit_ve.csv and out_heateqn_explicit_ve.csv differ
+ 
+Oops, your heat eqn explicit variable ends seems to be INCORRECT.  :(
+ 
+Files ../data/out_heateqn_implicit_fe.csv and out_heateqn_implicit_fe.csv differ
+ 
+Oops, your heat eqn implicit fixed ends seems to be INCORRECT.  :(
+ 
+============================================
+vis/jbugeja-output.txt
+19:38:15_Saturday_14_October_2017
+============================================
+======================================================
+                    SHOCK WAVE                        
+======================================================
+M,theta,beta_lower,beta_upper
+2.000000,0,30.000000,90.000000
+2.000000,1,30.811426,89.399727
+2.000000,2,31.646288,88.797809
+2.000000,3,32.505539,88.192572
+2.000000,4,33.390236,87.582283
+2.000000,5,34.301575,86.965115
+2.000000,6,35.240917,86.339110
+2.000000,7,36.209830,85.702132
+2.000000,8,37.210136,85.051814
+2.000000,9,38.243984,84.385486
+2.000000,10,39.313932,83.700080
+2.000000,11,40.423072,82.992015
+2.000000,12,41.575195,82.257022
+2.000000,13,42.775023,81.489909
+2.000000,14,44.028561,80.684217
+2.000000,15,45.343617,79.831687
+2.000000,16,46.730641,78.921432
+2.000000,17,48.204127,77.938527
+2.000000,18,49.785132,76.861492
+2.000000,19,51.506270,75.657297
+2.000000,20,53.422941,74.270137
+2.000000,21,55.644290,72.590465
+2.000000,22,58.456561,70.331647
+6.000000,0,9.594068,90.000000
+6.000000,1,10.230742,89.765671
+6.000000,2,10.906348,89.531078
+6.000000,3,11.620372,89.295960
+6.000000,4,12.371918,89.060047
+6.000000,5,13.159761,88.823068
+6.000000,6,13.982420,88.584746
+6.000000,7,14.838234,88.344794
+6.000000,8,15.725442,88.102916
+6.000000,9,16.642245,87.858805
+6.000000,10,17.586867,87.612139
+6.000000,11,18.557607,87.362580
+6.000000,12,19.552866,87.109771
+6.000000,13,20.571181,86.853331
+6.000000,14,21.611238,86.592856
+6.000000,15,22.671883,86.327910
+6.000000,16,23.752125,86.058025
+6.000000,17,24.851142,85.782690
+6.000000,18,25.968280,85.501351
+6.000000,19,27.103051,85.213400
+6.000000,20,28.255137,84.918165
+6.000000,21,29.424388,84.614903
+6.000000,22,30.610828,84.302785
+6.000000,23,31.814664,83.980879
+6.000000,24,33.036293,83.648132
+6.000000,25,34.276327,83.303348
+6.000000,26,35.535607,82.945151
+6.000000,27,36.815245,82.571952
+6.000000,28,38.116666,82.181893
+6.000000,29,39.441672,81.772782
+6.000000,30,40.792526,81.342000
+6.000000,31,42.172078,80.886377
+6.000000,32,43.583936,80.402013
+6.000000,33,45.032716,79.884028
+6.000000,34,46.524425,79.326173
+6.000000,35,48.067051,78.720241
+6.000000,36,49.671539,78.055086
+6.000000,37,51.353479,77.314933
+6.000000,38,53.136315,76.476171
+6.000000,39,55.058099,75.500595
+6.000000,40,57.188252,74.318642
+6.000000,41,59.682031,72.774922
+6.000000,42,63.104865,70.303888
+======================================================
+                 LINEAR ALG SYSTEMS                   
+======================================================
+x
+64.604670
+-12.520934
+-19.598765
+-16.571390
+6.992843
+-9.239265
+======================================================
+                  INTERPOLATION                       
+======================================================
+lagrange
+19.571429
+cubic
+17.240000
+======================================================
+           HEAT EQN EXPLICIT FIXED ENDS               
+======================================================
+x,f(x)
+0.000000, 0.000000
+0.010000, 0.008472
+0.020000, 0.017364
+0.030000, 0.027090
+0.040000, 0.038046
+0.050000, 0.050605
+0.060000, 0.065102
+0.070000, 0.081824
+0.080000, 0.100994
+0.090000, 0.122753
+0.100000, 0.147152
+0.110000, 0.174127
+0.120000, 0.203497
+0.130000, 0.234951
+0.140000, 0.268049
+0.150000, 0.302223
+0.160000, 0.336794
+0.170000, 0.370988
+0.180000, 0.403964
+0.190000, 0.434846
+0.200000, 0.462765
+0.210000, 0.486891
+0.220000, 0.506482
+0.230000, 0.520913
+0.240000, 0.529716
+0.250000, 0.532598
+0.260000, 0.529463
+0.270000, 0.520412
+0.280000, 0.505742
+0.290000, 0.485926
+0.300000, 0.461591
+0.310000, 0.433487
+0.320000, 0.402446
+0.330000, 0.369341
+0.340000, 0.335054
+0.350000, 0.300427
+0.360000, 0.266240
+0.370000, 0.233175
+0.380000, 0.201806
+0.390000, 0.172580
+0.400000, 0.145818
+0.410000, 0.121719
+0.420000, 0.100367
+0.430000, 0.081745
+0.440000, 0.065754
+0.450000, 0.052231
+0.460000, 0.040967
+0.470000, 0.031724
+0.480000, 0.024251
+0.490000, 0.018299
+0.500000, 0.013627
+0.510000, 0.010015
+0.520000, 0.007262
+0.530000, 0.005195
+0.540000, 0.003666
+0.550000, 0.002551
+0.560000, 0.001751
+0.570000, 0.001185
+0.580000, 0.000791
+0.590000, 0.000520
+0.600000, 0.000337
+0.610000, 0.000215
+0.620000, 0.000136
+0.630000, 0.000084
+0.640000, 0.000051
+0.650000, 0.000031
+0.660000, 0.000018
+0.670000, 0.000011
+0.680000, 0.000006
+0.690000, 0.000003
+0.700000, 0.000002
+0.710000, 0.000001
+0.720000, 0.000001
+0.730000, 0.000000
+0.740000, 0.000000
+0.750000, 0.000000
+0.760000, 0.000000
+0.770000, 0.000000
+0.780000, 0.000000
+0.790000, 0.000000
+0.800000, 0.000000
+0.810000, 0.000000
+0.820000, 0.000000
+0.830000, 0.000000
+0.840000, 0.000000
+0.850000, 0.000000
+0.860000, 0.000000
+0.870000, 0.000000
+0.880000, 0.000000
+0.890000, 0.000000
+0.900000, 0.000000
+0.910000, 0.000000
+0.920000, 0.000000
+0.930000, 0.000000
+0.940000, 0.000000
+0.950000, 0.000000
+0.960000, 0.000000
+0.970000, 0.000000
+0.980000, 0.000000
+0.990000, 0.000000
+1.000000, 0.000000
+======================================================
+          HEAT EQN EXPLICIT VARIABLE ENDS             
+======================================================
+x,f(x)
+0.000000, 0.000141
+0.010000, 0.008472
+0.020000, 0.017364
+0.030000, 0.027090
+0.040000, 0.038046
+0.050000, 0.050605
+0.060000, 0.065102
+0.070000, 0.081824
+0.080000, 0.100994
+0.090000, 0.122753
+0.100000, 0.147152
+0.110000, 0.174127
+0.120000, 0.203497
+0.130000, 0.234951
+0.140000, 0.268049
+0.150000, 0.302223
+0.160000, 0.336794
+0.170000, 0.370988
+0.180000, 0.403964
+0.190000, 0.434846
+0.200000, 0.462765
+0.210000, 0.486891
+0.220000, 0.506482
+0.230000, 0.520913
+0.240000, 0.529716
+0.250000, 0.532598
+0.260000, 0.529463
+0.270000, 0.520412
+0.280000, 0.505742
+0.290000, 0.485926
+0.300000, 0.461591
+0.310000, 0.433487
+0.320000, 0.402446
+0.330000, 0.369341
+0.340000, 0.335054
+0.350000, 0.300427
+0.360000, 0.266240
+0.370000, 0.233175
+0.380000, 0.201806
+0.390000, 0.172580
+0.400000, 0.145818
+0.410000, 0.121719
+0.420000, 0.100367
+0.430000, 0.081745
+0.440000, 0.065754
+0.450000, 0.052231
+0.460000, 0.040967
+0.470000, 0.031724
+0.480000, 0.024251
+0.490000, 0.018299
+0.500000, 0.013627
+0.510000, 0.010015
+0.520000, 0.007262
+0.530000, 0.005195
+0.540000, 0.003666
+0.550000, 0.002551
+0.560000, 0.001751
+0.570000, 0.001185
+0.580000, 0.000791
+0.590000, 0.000520
+0.600000, 0.000337
+0.610000, 0.000215
+0.620000, 0.000136
+0.630000, 0.000084
+0.640000, 0.000051
+0.650000, 0.000031
+0.660000, 0.000018
+0.670000, 0.000011
+0.680000, 0.000006
+0.690000, 0.000003
+0.700000, 0.000002
+0.710000, 0.000001
+0.720000, 0.000001
+0.730000, 0.000000
+0.740000, 0.000000
+0.750000, 0.000000
+0.760000, 0.000000
+0.770000, 0.000000
+0.780000, 0.000000
+0.790000, 0.000000
+0.800000, 0.000000
+0.810000, 0.000000
+0.820000, 0.000000
+0.830000, 0.000000
+0.840000, 0.000000
+0.850000, 0.000000
+0.860000, 0.000000
+0.870000, 0.000000
+0.880000, 0.000000
+0.890000, 0.000000
+0.900000, 0.000000
+0.910000, 0.000000
+0.920000, 0.000000
+0.930000, 0.000000
+0.940000, 0.000000
+0.950000, 0.000000
+0.960000, 0.000000
+0.970000, 0.000000
+0.980000, 0.000000
+0.990000, 0.000000
+1.000000, 0.000000
+======================================================
+          HEAT EQN IMPLICIT FIXED ENDS             
+======================================================
+x,f(x)
+0.000000, 0.000000
+0.010000, 0.008397
+0.020000, 0.017205
+0.030000, 0.026832
+0.040000, 0.037668
+0.050000, 0.050085
+0.060000, 0.064420
+0.070000, 0.080968
+0.080000, 0.099961
+0.090000, 0.121555
+0.100000, 0.145816
+0.110000, 0.172699
+0.120000, 0.202039
+0.130000, 0.233537
+0.140000, 0.266762
+0.150000, 0.301151
+0.160000, 0.336019
+0.170000, 0.370582
+0.180000, 0.403981
+0.190000, 0.435316
+0.200000, 0.463688
+0.210000, 0.488241
+0.220000, 0.508199
+0.230000, 0.522914
+0.240000, 0.531896
+0.250000, 0.534840
+0.260000, 0.531644
+0.270000, 0.522414
+0.280000, 0.507460
+0.290000, 0.487275
+0.300000, 0.462514
+0.310000, 0.433955
+0.320000, 0.402461
+0.330000, 0.368935
+0.340000, 0.334280
+0.350000, 0.299360
+0.360000, 0.264965
+0.370000, 0.231782
+0.380000, 0.200383
+0.390000, 0.171205
+0.400000, 0.144557
+0.410000, 0.120621
+0.420000, 0.099463
+0.430000, 0.081050
+0.440000, 0.065267
+0.450000, 0.051938
+0.460000, 0.040845
+0.470000, 0.031743
+0.480000, 0.024380
+0.490000, 0.018505
+0.500000, 0.013882
+0.510000, 0.010293
+0.520000, 0.007544
+0.530000, 0.005465
+0.540000, 0.003913
+0.550000, 0.002770
+0.560000, 0.001939
+0.570000, 0.001342
+0.580000, 0.000918
+0.590000, 0.000622
+0.600000, 0.000416
+0.610000, 0.000275
+0.620000, 0.000180
+0.630000, 0.000117
+0.640000, 0.000075
+0.650000, 0.000048
+0.660000, 0.000030
+0.670000, 0.000019
+0.680000, 0.000011
+0.690000, 0.000007
+0.700000, 0.000004
+0.710000, 0.000002
+0.720000, 0.000001
+0.730000, 0.000001
+0.740000, 0.000001
+0.750000, 0.000000
+0.760000, 0.000000
+0.770000, 0.000000
+0.780000, 0.000000
+0.790000, 0.000000
+0.800000, 0.000000
+0.810000, 0.000000
+0.820000, 0.000000
+0.830000, 0.000000
+0.840000, 0.000000
+0.850000, 0.000000
+0.860000, 0.000000
+0.870000, 0.000000
+0.880000, 0.000000
+0.890000, 0.000000
+0.900000, 0.000000
+0.910000, 0.000000
+0.920000, 0.000000
+0.930000, 0.000000
+0.940000, 0.000000
+0.950000, 0.000000
+0.960000, 0.000000
+0.970000, 0.000000
+0.980000, 0.000000
+0.990000, 0.000000
+1.000000, 0.000000
+======================================================
+============================================
+src/tasks.h
+19:38:13_Saturday_14_October_2017
+============================================
+/***************************************************************************
+ *
+ *   File        : tasks.h
+ *   Student Id  : <758397>
+ *   Name        : <JUSTIN BUGEJA>
+ *
+ ***************************************************************************/
+
+#ifndef TASKS_H
+
+typedef struct q2_eqpar_t q2_eqpar_t;
+typedef struct q3_matrixpar_t q3_matrixpar_t;
+
+/* Question 2 */
+void shockwave(const char* q2_file);
+
+double newton_raph(double b, double mval, double theta);
+double shock_der(double B, double m, double theta);
+double shock_funct(double B, double m, double theta);
+
+double rad2deg(double rad);
+double deg2rad(double deg);
+double cot(double theta);
+
+/* Question 3 */
+void linalgbsys(const char* q3_file);
+
+void gauss_sol(q3_matrixpar_t* matrix, int n, double *heateq, int Nt, int t);
+
+/* Question 5 */
+void interp(const char* q5_file, const double xo);
+int cmpfnc (const void * a, const void * b);
+
+/* Question 6 */
+void heateqn(const char* q6_file);
+
+double explicit_int(double* fn, int Nt, int Nx, double deltat, double deltax,
+		int t, int x, double mu);
+double explicit_int_ve(double* fn, int Nt, int Nx, double deltat, double deltax,
+		int t, int x, double mu);
+void implicit_int(double* fn, int Nt, int Nx, double deltat, double deltax,
+		int t, int x, double mu);
+double RHS(double* fn, int x, int t, int Nx, int Nt, double deltax, double mu);
+
+#endif
+============================================
+src/main.c
+19:38:13_Saturday_14_October_2017
+============================================
+/***************************************************************************
+ *
+ *   File        : main.c
+ *   Student Id  : <758397>
+ *   Name        : <JUSTIN BUGEJA>
+ *
+ ***************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <sys/time.h>
+#include <string.h>
+#include "tasks.h"
+
+#define TIMEDIV 1000.0
+
+int main(int argc, char *argv[]) {
+
+	if (argc < 5) {
+		printf("NOT ENOUGH ARGUMENTS\n");
+		exit(EXIT_FAILURE);
+	}
+
+	char* q2_file = argv[1];
+	char* q3_file = argv[2];
+	char* q5_file = argv[3];
+	double xo = atoi(argv[4]);
+	char* q6_file = argv[5];
+
+	/* timing for each task and output running time in ms */
+	struct timeval start;
+	struct timeval stop;
+
+	/* Question 2 */
+	gettimeofday(&start, NULL);
+	shockwave(q2_file);
+	gettimeofday(&stop, NULL);
+	double elapsed_ms = (stop.tv_sec - start.tv_sec) * TIMEDIV;
+	elapsed_ms += (stop.tv_usec - start.tv_usec) / TIMEDIV;
+	printf("QUESTION 2: %.2f ms\n", elapsed_ms);
+
+	/* Question 3 */
+	gettimeofday(&start, NULL);
+	linalgbsys(q3_file);
+	gettimeofday(&stop, NULL);
+	elapsed_ms = (stop.tv_sec - start.tv_sec) * TIMEDIV;
+	elapsed_ms += (stop.tv_usec - start.tv_usec) / TIMEDIV;
+	printf("QUESTION 3: %.2f ms\n", elapsed_ms);
+
+	/* Question 5 */
+	gettimeofday(&start, NULL);
+	interp(q5_file, xo);
+	gettimeofday(&stop, NULL);
+	elapsed_ms = (stop.tv_sec - start.tv_sec) * TIMEDIV;
+	elapsed_ms += (stop.tv_usec - start.tv_usec) / TIMEDIV;
+	printf("QUESTION 5: %.2f ms\n", elapsed_ms);
+
+	/* Question 6 */
+	gettimeofday(&start, NULL);
+	heateqn(q6_file);
+	gettimeofday(&stop, NULL);
+	elapsed_ms = (stop.tv_sec - start.tv_sec) * TIMEDIV;
+	elapsed_ms += (stop.tv_usec - start.tv_usec) / TIMEDIV;
+	printf("QUESTION 6: %.2f ms\n", elapsed_ms);
+
+	return (EXIT_SUCCESS);
+}
+============================================
+src/tasks.c
+19:38:13_Saturday_14_October_2017
+============================================
+/***************************************************************************
+ *
+ *   File        : tasks.c
+ *   Student Id  : <758397>
+ *   Name        : <JUSTIN BUGEJA>
+ *
+ ***************************************************************************/
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <sys/time.h>
+#include <string.h>
+#include <assert.h>
+#include "tasks.h"
+
+#define MAXITR 100
+#define LARGE_NUM 2147483646
+#define LAGNUM 3
+#define BUFF 5
+#define NVALS 1
+#define EPSILON 1.0e-12
+#define MAXDEG 90
+#define Y 1.4
+#define XMAX 1.0
+#define TMAX 2.0
+#define NTPRINT 99
+#define M_PI 3.14159265359
+#define OUTPUTFILE1 "out_shock.csv"
+#define OUTPUTFILE2 "out_linalsys.csv"
+#define OUTPUTFILE3 "out_interp.csv"
+#define OUTPUTFILE4 "out_heateqn_explicit_fe.csv"
+#define OUTPUTFILE5 "out_heateqn_explicit_ve.csv"
+#define OUTPUTFILE6 "out_heateqn_implicit_fe.csv"
+
+/* needed for interp sorting (in the case of multiple x values for 2nd order lagrange */
+int xnought;
+
+typedef struct {
+
+	double x;
+	double fx;
+	double dist;
+
+} dist_t;
+
+struct q2_eqpar_t {
+
+	double m;
+	double theta;
+	double betaL;
+	double betaU;
+	double gamma;
+
+};
+
+struct q3_matrixpar_t {
+
+	double *a;
+	double *b;
+	double *c;
+	double *q;
+	double *x;
+
+};
+
+void shockwave(const char* q2_file) {
+	FILE *file;
+	if ((file = fopen(q2_file, "r")) == NULL) {
+		printf("ERROR - file1 could not be opened\n\n");
+		exit(EXIT_FAILURE);
+	}
+
+	q2_eqpar_t eq;
+
+	/* read in file to equation */
+	fscanf(file, "%*s");
+	fscanf(file, "%lf, %lf, %lf, %lf, %lf", &eq.m, &eq.theta, &eq.betaL,
+			&eq.betaU, &eq.gamma);
+
+	/* initialising */
+	int msize = NVALS;
+	double *m = malloc(msize * sizeof(double));
+
+	/* to skip the next line */
+	fscanf(file, "%*s");
+
+	/* read each line */
+	int n = 0;
+	while (fscanf(file, "%lf%*s", &m[n]) == 1) {
+		n++;
+		if (n >= msize) {
+			msize *= 2;
+			double* temp = realloc(m, msize * sizeof(double));
+			if (!temp) {
+				printf("realloc failed\n");
+				exit(EXIT_FAILURE);
+			}
+			m = temp;
+		}
+	}
+	fclose(file);
+
+	/*
+	 printf(
+	 "shock function at B = 5, m = 1, theta = 0: %f\n shock derivative at  B = 5, "
+	 "m = 1, theta = 0: %f\n", shock_funct(10, 1, 0),
+	 shock_der(10, 1, 0));
+	 */
+
+	/* PRINT OUTPUT TO FILE*/
+	FILE *fp = fopen(OUTPUTFILE1, "w");
+	if (fp == NULL) {
+		printf("Error opening file!\n");
+		exit(EXIT_FAILURE);
+	}
+
+	/* print header */
+	fprintf(fp, "M,theta,beta_lower,beta_upper\n");
+
+	/* differing values of m */
+	for (int i = 0; i < n; i++) {
+		float mval = m[i];
+		/* differing values of theta */
+		for (int deg = 0; deg <= MAXDEG; deg++) {
+			double theta = deg2rad(deg);
+
+			/* inital guess */
+			double bLi, bL = deg2rad(eq.betaL);
+			/* calculating B_lower through Newton-Raphson */
+			bLi = rad2deg(newton_raph(bL, mval, theta));
+
+			/* inital guess */
+			double bUi, bU = deg2rad(eq.betaU);
+			/* calculating B_upper through Newton-Raphson */
+			bUi = rad2deg(newton_raph(bU, mval, theta));
+
+			/* stop when b is not physically realisable */
+			if (bLi < deg || bUi < deg || bLi > MAXDEG || bUi > MAXDEG) {
+				break;
+			}
+
+			fprintf(fp, "%.6lf,%d,%.6lf,%.6lf\n", mval, deg, bLi, bUi);
+		}
+	}
+	fclose(fp);
+	free(m);
+
+}
+
+double newton_raph(double b, double mval, double theta) {
+	double fn, bi;
+	int i;
+	for (i = 0; i <= MAXITR; i++) {
+		fn = shock_funct(b, mval, theta) / shock_der(b, mval, theta);
+		bi = b - fn;
+		if (fabs(fn) < EPSILON) {
+			break;
+		}
+		b = bi;
+	}
+	/* if solution could not be found */
+	if (i > MAXITR) {
+		return -1;
+	}
+	/* TODO: find optimal b */
+//	printf("number of itr = %d\n", i);
+	return bi;
+}
+
+/* derivative of the shock function */
+double shock_der(double B, double m, double theta) {
+
+	double b1 = B + EPSILON;
+	double b2 = B - EPSILON;
+	double f1 = shock_funct(b1, m, theta);
+	double f2 = shock_funct(b2, m, theta);
+
+	return (f2 - f1) / (b2 - b1);
+}
+
+/* rad to degrees */
+double rad2deg(double rad) {
+	return rad * 180 / M_PI;
+}
+
+/* rad to degrees */
+double deg2rad(double deg) {
+	return deg * M_PI / 180;
+}
+
+/* shock function */
+double shock_funct(double B, double m, double theta) {
+	return (2 * cot(B)
+			* ((pow(m, 2) * pow(sin(B), 2) - 1)
+					/ (pow(m, 2) * (Y + cos(2 * B)) + 2)) - tan(theta));
+}
+
+/* cotangent function */
+double cot(double theta) {
+	return cos(theta) / sin(theta);
+}
+
+void linalgbsys(const char* q3_file) {
+	FILE *file;
+	if ((file = fopen(q3_file, "r")) == NULL) {
+		printf("ERROR - file2 could not be opened\n\n");
+		exit(EXIT_FAILURE);
+	}
+
+	int size = NVALS;
+
+	q3_matrixpar_t matrix;
+	matrix.a = malloc(size * sizeof(double));
+	matrix.b = malloc(size * sizeof(double));
+	matrix.c = malloc(size * sizeof(double));
+	matrix.q = malloc(size * sizeof(double));
+	if (!matrix.a || !matrix.b || !matrix.c || !matrix.q) {
+		printf("malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
+
+	/* skip header line */
+	fscanf(file, "%*s");
+
+	int n = 0;
+	while (fscanf(file, "%lf, %lf, %lf, %lf", &matrix.a[n], &matrix.b[n],
+			&matrix.c[n], &matrix.q[n]) == 4) {
+		/*
+		 printf("%lf, %lf, %lf, %lf\n n = %d\n", matrix.a[n], matrix.b[n],
+		 matrix.c[n], matrix.q[n], n);
+		 */
+		n++;
+		if (n >= size) {
+			size *= 2;
+			double* temp1 = realloc(matrix.a, size * sizeof(double));
+			double* temp2 = realloc(matrix.b, size * sizeof(double));
+			double* temp3 = realloc(matrix.c, size * sizeof(double));
+			double* temp4 = realloc(matrix.q, size * sizeof(double));
+
+			if (!temp1 || !temp2 || !temp3 || !temp4) {
+				printf("realloc failed\n");
+				exit(EXIT_FAILURE);
+			}
+			matrix.a = temp1;
+			matrix.b = temp2;
+			matrix.c = temp3;
+			matrix.q = temp4;
+
+		}
+	}
+	fclose(file);
+	matrix.x = malloc(size * sizeof(double));
+	if (!matrix.x) {
+		printf("malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
+
+	gauss_sol(&matrix, n, NULL, 0, 0);
+
+	/* PRINT OUTPUT TO FILE*/
+	FILE *fp = fopen(OUTPUTFILE2, "w");
+	if (fp == NULL) {
+		printf("Error opening file!\n");
+		exit(EXIT_FAILURE);
+	}
+
+	/* print header */
+	fprintf(fp, "x\n");
+	/* print x vals */
+	for (int i = 0; i < n; i++) {
+		fprintf(fp, "%.6lf\n", matrix.x[i]);
+	}
+
+	/* cleanup */
+	fclose(fp);
+	free(matrix.a);
+	free(matrix.b);
+	free(matrix.c);
+	free(matrix.q);
+	free(matrix.x);
+
+}
+
+void gauss_sol(q3_matrixpar_t* matrix, int n, double *heateq, int Nt, int t) {
+	int i, j;
+	double mgauss_a[n];
+	double mgauss_q[n];
+
+	for (i = 0; i < n; i++) {
+
+		if (i == 0) {
+			mgauss_a[i] = matrix->a[i];
+			mgauss_q[i] = matrix->q[i];
+		} else {
+			mgauss_a[i] = matrix->a[i]
+					- (matrix->c[i] * matrix->b[i - 1]) / mgauss_a[i - 1];
+			mgauss_q[i] = matrix->q[i]
+					- (matrix->c[i] * mgauss_q[i - 1]) / mgauss_a[i - 1];
+		}
+	}
+	int num = n - 1;
+	for (j = num; j >= 0; j--) {
+		if (heateq != NULL) {
+			if (j == num) {
+				heateq[(Nt) * j + t] = mgauss_q[j] / mgauss_a[j];
+			} else {
+				heateq[(Nt) * j + t] = (mgauss_q[j]
+						- matrix->b[j] * matrix->x[j + 1]) / mgauss_a[j];
+			}
+			//		printf("implicit sol = %lf\n",heateq[(Nt) * j + t]);
+		}
+		if (j == num) {
+			matrix->x[j] = mgauss_q[j] / mgauss_a[j];
+		} else {
+			matrix->x[j] = (mgauss_q[j] - matrix->b[j] * matrix->x[j + 1])
+					/ mgauss_a[j];
+		}
+	}
+}
+
+void interp(const char* q5_file, const double xo) {
+	FILE* file;
+
+	if ((file = fopen(q5_file, "r")) == NULL) {
+		printf("ERROR - file3 could not be opened\n\n");
+		exit(EXIT_FAILURE);
+	}
+
+	/* skip header */
+	fscanf(file, "%*s");
+
+	int size = NVALS;
+	double *x = malloc(size * sizeof(double));
+	double *fx = malloc(size * sizeof(double));
+	if (!x || !fx) {
+		printf("malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
+
+	int n = 0;
+	while ((fscanf(file, "%lf, %lf", &x[n], &fx[n])) == 2) {
+		n++;
+		if (n >= size) {
+			size *= 2;
+			double *temp1 = realloc(x, size * sizeof(double));
+			double *temp2 = realloc(fx, size * sizeof(double));
+
+			if (!temp1 || !temp2) {
+				printf("realloc failed\n");
+				exit(EXIT_FAILURE);
+			}
+			x = temp1;
+			fx = temp2;
+		}
+	}
+	fclose(file);
+
+	dist_t xdist[n];
+
+	int p;
+	for (p = 0; p < n; p++) {
+		xdist[p].x = x[p];
+		xdist[p].fx = fx[p];
+		xdist[p].dist = fabs(x[p] - xo);
+	}
+
+	qsort(xdist, n, 3 * sizeof(double), cmpfnc);
+
+	double lagsum = 0;
+	double l[LAGNUM];
+
+	int i, j;
+	for (i = 0; i < LAGNUM; i++) {
+		l[i] = 1.0;
+		for (j = 0; j < LAGNUM; j++) {
+			if (i == j) {
+				continue;
+			}
+			l[i] *= (xo - xdist[j].x) / (xdist[i].x - xdist[j].x);
+		}
+		lagsum += l[i] * xdist[i].fx;
+	}
+
+//	double b0 = fx[1];
+//	double b1 = (fx[2] - b0) / (x[2] - x[1]);
+//	double b2 = (((fx[3] - fx[2]) / (x[3] - x[2])) - b1) / (x[3] - x[1]);
+
+	q3_matrixpar_t matrix;
+	matrix.a = malloc(n * sizeof(double));
+	matrix.b = malloc(n * sizeof(double));
+	matrix.c = malloc(n * sizeof(double));
+	matrix.q = malloc(n * sizeof(double));
+	matrix.x = malloc(n * sizeof(double));
+	if (!matrix.a || !matrix.b || !matrix.c || !matrix.q || !matrix.x) {
+		printf("malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
+
+	/* function variables */
+	double a[n];
+	double b[n];
+	double c[n];
+	double d[n];
+	double h[n];
+
+	/* natural spline, set double der to 0 at end points */
+	c[0] = 0;
+	c[n - 1] = 0;
+	/* initialising */
+	for (i = 0; i < n; i++) {
+		a[i] = fx[i];
+		b[i] = 0;
+		c[i] = 0;
+		d[i] = 0;
+		h[i] = x[i + 1] - x[i];
+	}
+	printf("n end: %d\n", n - 2);
+	for (i = 0; i < n; i++) {
+		/* fill triangular matrix */
+		if (i == 0) {
+			matrix.a[i] = 1;
+			matrix.b[i] = 0;
+			matrix.c[i] = 0;
+			matrix.q[i] = 0;
+		} else if (i == n - 1) {
+			matrix.a[i] = 1;
+			matrix.b[i] = 0;
+			matrix.c[i] = 0;
+			matrix.q[i] = 0;
+		} else {
+			matrix.a[i] = 2 * (h[i - 1] + h[i]);
+			matrix.b[i] = h[i];
+			matrix.c[i] = h[i - 1];
+			matrix.q[i] = (3 / h[i]) * (a[i + 1] - a[i])
+					+ (3 / h[i - 1]) * (a[i - 1] - a[i]);
+		}
+	}
+
+	/* solving triangular matrix */
+	gauss_sol(&matrix, n, NULL, 0, 0);
+
+	int m = 0;
+	for (i = 1; i < n; i++) {
+
+		/* setting c values */
+		c[i] = matrix.x[i];
+
+		/* to find interval to evaluate xo */
+		if (x[i] < xo) {
+			m = i;
+		}
+	}
+
+	/* solving for the remaining variables */
+	for (i = 0; i < n; i++) {
+		b[i] = (1 / h[i]) * (a[i + 1] - a[i])
+				- (h[i] / 3) * (2 * c[i] + c[i + 1]);
+		d[i] = (c[i + 1] - c[i]) / (3 * h[i]);
+	}
+
+	/* cubic spline formula */
+	double cubspl = a[m] + b[m] * (xo - x[m]) + c[m] * pow((xo - x[m]), 2)
+			+ d[m] * pow((xo - x[m]), 3);
+
+	/* PRINT OUTPUT TO FILE*/
+	FILE *fp = fopen(OUTPUTFILE3, "w");
+	if (fp == NULL) {
+		printf("Error opening file!\n");
+		exit(EXIT_FAILURE);
+	}
+
+	fprintf(fp, "lagrange\n");
+	fprintf(fp, "%.6lf\n", lagsum);
+	fprintf(fp, "cubic\n");
+	fprintf(fp, "%.6lf\n", cubspl);
+
+	/* cleanup */
+	fclose(fp);
+	free(x);
+	free(fx);
+	free(matrix.a);
+	free(matrix.b);
+	free(matrix.c);
+	free(matrix.q);
+	free(matrix.x);
+
+}
+
+int cmpfnc(const void * a, const void * b) {
+	dist_t ab = *(dist_t*) a;
+	dist_t bb = *(dist_t*) b;
+	if (ab.dist > bb.dist)
+		return 1;
+	else if (ab.dist < bb.dist)
+		return -1;
+	else
+		return 0;
+}
+
+void heateqn(const char* q6_file) {
+	FILE *file;
+	if ((file = fopen(q6_file, "r")) == NULL) {
+		printf("ERROR - file4 could not be opened\n\n");
+		exit(EXIT_FAILURE);
+	}
+
+	double mu = 0.0;
+	int Nx = 0, Nt = 0, i = 0, j = 0, k = 0;
+
+	/* skip header */
+	fscanf(file, "%*s");
+	fscanf(file, "%lf, %d, %d", &mu, &Nx, &Nt);
+
+	fclose(file);
+
+	double *fn_e = calloc((Nx + 1) * Nt, sizeof(double));
+	if (!fn_e) {
+		printf("malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
+	double *fn_e_ve = calloc((Nx + 1) * Nt, sizeof(double));
+	if (!fn_e_ve) {
+		printf("malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
+	double *fn_i = calloc((Nx + 1) * Nt, sizeof(double));
+	if (!fn_i) {
+		printf("malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
+	double deltax = XMAX / Nx;
+	double deltat = TMAX / Nt;
+
+	/* setting initial conditions */
+	for (i = 0; i <= Nx; i++) {
+		double x = 1.0 * (XMAX * i) / Nx;
+		if (x >= 0.125 && x <= 0.35) {
+			fn_e[(Nt) * i + 0] = 0.5 * (1 - cos(8 * M_PI * (x - 0.125)));
+			fn_e_ve[(Nt) * i + 0] = 0.5 * (1 - cos(8 * M_PI * (x - 0.125)));
+			fn_i[(Nt) * i + 0] = 0.5 * (1 - cos(8 * M_PI * (x - 0.125)));
+		} else {
+			fn_e[(Nt) * i + 0] = 0;
+			fn_e_ve[(Nt) * i + 0] = 0;
+			fn_i[(Nt) * i + 0] = 0;
+		}
+	}
+
+	/* use explicit Euler to find remaining f */
+	for (k = 1; k < Nt; k++) {
+		for (j = 0; j <= Nx; j++) {
+			fn_e[(Nt) * j + k] = explicit_int(fn_e, Nt, Nx, deltat, deltax, j,
+					k, mu);
+			//		printf("%.6lf, %.6lf\n", 1.0 * (XMAX * j) / Nx, fn_e[(Nt) * j + k]);
+			fn_e_ve[(Nt) * j + k] = explicit_int_ve(fn_e, Nt, Nx, deltat,
+					deltax, j, k, mu);
+		}
+		implicit_int(fn_i, Nt, Nx, deltat, deltax, j, k, mu);
+	}
+
+	/* use implicit Euler to find remaining f */
+
+	/* PRINT OUTPUT TO FILE - explicit fixed ends*/
+	FILE *fp1 = fopen(OUTPUTFILE4, "w");
+	/* PRINT OUTPUT TO FILE - explicit variable ends*/
+	FILE *fp2 = fopen(OUTPUTFILE5, "w");
+	/* PRINT OUTPUT TO FILE - implicit fixed ends*/
+	FILE *fp3 = fopen(OUTPUTFILE6, "w");
+	if (!fp1 || !fp2 || !fp3) {
+		printf("Error opening file!\n");
+		exit(EXIT_FAILURE);
+	}
+
+	fprintf(fp1, "x,f(x)\n");
+	fprintf(fp2, "x,f(x)\n");
+	fprintf(fp3, "x,f(x)\n");
+
+	for (i = 0; i <= Nx; i++) {
+		fprintf(fp1, "%.6lf, %.6lf\n", 1.0 * (XMAX * i) / Nx,
+				fn_e[(Nt) * i + NTPRINT]);
+		fprintf(fp2, "%.6lf, %.6lf\n", 1.0 * (XMAX * i) / Nx,
+				fn_e_ve[(Nt) * i + NTPRINT]);
+		fprintf(fp3, "%.6lf, %.6lf\n", 1.0 * (XMAX * i) / Nx,
+				fn_i[(Nt) * i + NTPRINT]);
+	}
+
+	fclose(fp1);
+	fclose(fp2);
+	fclose(fp3);
+	free(fn_e);
+	free(fn_e_ve);
+	free(fn_i);
+
+}
+
+/* explicit solution with fixed ends */
+double explicit_int(double* fn, int Nt, int Nx, double deltat, double deltax,
+		int x, int t, double mu) {
+	t = t - 1;
+	double fval = fn[(Nt) * x + t];
+	/* fixed end implementation */
+	if (x == 0 || x == Nx) {
+		return fval;
+	}
+	return fval + deltat * RHS(fn, x, t, Nx, Nt, deltax, mu);
+}
+
+/* explicit solution with variable ends*/
+double explicit_int_ve(double* fn, int Nt, int Nx, double deltat, double deltax,
+		int x, int t, double mu) {
+	t = t - 1;
+	double fval = fn[(Nt) * x + t];
+	return fval + deltat * RHS(fn, x, t, Nx, Nt, deltax, mu);
+}
+
+/* implicit solution with fixed ends */
+void implicit_int(double* fn, int Nt, int Nx, double deltat, double deltax,
+		int x, int t, double mu) {
+
+	double a, b;
+	a = 1 + (2 * deltat * mu) / pow(deltax, 2);
+	b = -(deltat * mu) / pow(deltax, 2);
+
+	q3_matrixpar_t matrix;
+	matrix.a = malloc(Nx * sizeof(double));
+	matrix.b = malloc(Nx * sizeof(double));
+	matrix.c = malloc(Nx * sizeof(double));
+	matrix.q = malloc(Nx * sizeof(double));
+	matrix.x = malloc(Nx * sizeof(double));
+
+	int i;
+	for (i = 0; i < Nx; i++) {
+		/* fill triangular matrix */
+		if (i == 0) {
+			matrix.a[i] = 1;
+			matrix.b[i] = 0;
+			matrix.c[i] = 0;
+			matrix.q[i] = fn[(Nt) * i + (t - 1)];
+		} else if (i == Nx - 1) {
+			matrix.a[i] = 1;
+			matrix.b[i] = 0;
+			matrix.c[i] = 0;
+			matrix.q[i] = fn[(Nt) * i + (t - 1)];
+			;
+		} else {
+			matrix.a[i] = a;
+			matrix.b[i] = b;
+			matrix.c[i] = b;
+			matrix.q[i] = fn[(Nt) * i + (t - 1)];
+			;
+		}
+	}
+	gauss_sol(&matrix, Nx, fn, Nt, t);
+
+	free(matrix.a);
+	free(matrix.b);
+	free(matrix.c);
+	free(matrix.q);
+	free(matrix.x);
+
+}
+
+/* RHS solution */
+double RHS(double* fn, int x, int t, int Nx, int Nt, double deltax, double mu) {
+	/* variable ends */
+	if (x == 0) {
+		return mu
+				* ((fn[(Nt) * (x) + t]) - 2 * (fn[(Nt) * (x + 1) + t])
+						+ (fn[(Nt) * (x + 2) + t])) / pow(deltax, 2);
+	}
+	/* variable ends */
+	if (x == Nx) {
+		return mu
+				* ((fn[(Nt) * (x) + t]) - 2 * (fn[(Nt) * (x - 1) + t])
+						+ (fn[(Nt) * (x - 2) + t])) / pow(deltax, 2);
+	}
+	/* general sol */
+	return mu
+			* ((fn[(Nt) * (x + 1) + t]) - 2 * (fn[(Nt) * (x) + t])
+					+ (fn[(Nt) * (x - 1) + t])) / pow(deltax, 2);
+}
+
